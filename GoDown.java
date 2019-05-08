@@ -63,8 +63,6 @@ public class GoDown {
             for (int j = 0; j < 3; j++) {
                 table[i][j] = sc.nextInt();
             }
-
-
         }
 
         int preMax[] = new int[3];
