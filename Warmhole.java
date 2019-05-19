@@ -64,11 +64,7 @@ public class Warmhole {
     void solve() {
         for(int i = 0; i < nCase; i++) {
             Graph map = graphSet[i];
-            for(int j = 1; j < map.V + 1; j++) {
-                isPossible[i] = hasNegativeCycle(map, j);
-                if(isPossible[i])
-                    break;
-            }
+            isPossible[i] = hasNegativeCycle(map, 1);
         }
     }
 
